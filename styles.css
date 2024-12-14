@@ -21,6 +21,22 @@ header p {
     color: #555;
 }
 
+/* Fade-in animation */
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-header {
+    animation: fadeInSlideUp 1.5s ease-out;
+}
+
 /* Navigation */
 nav ul {
     list-style-type: none;
